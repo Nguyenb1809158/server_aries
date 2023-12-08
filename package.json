@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/Nguyenb1809158/server_ecommerce#readme",
   "dependencies": {
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "express-handlebars": "^7.1.2",
     "express-session": "^1.17.3",

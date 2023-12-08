@@ -4,10 +4,12 @@ const engine = require('express-handlebars')
 const app = express()
 const morgan = require('morgan')
 const bodyParser=require('body-parser')//thêm cái này để form sẽ trả về req.body chứ mặc định là ko phải vậy
-const port = process.env.port || 5000
 const mongoose = require('mongoose')
+const dotenv = require('dotenv')
+dotenv.config()
+const port = process.env.port || 5000
 //kết nối tới mongodb cloud
-const URI = 'mongodb+srv://admin:cGq7ExJLk1mhvqph@ecommerce.tz19vgs.mongodb.net/?retryWrites=true&w=majority'
+const URI = process.env.DATABASE_URL
 //kết nối tới csdl trên laptop
 
 // const db = require('./config/db')
