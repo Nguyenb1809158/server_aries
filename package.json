@@ -1,0 +1,38 @@
+{
+  "name": "server_ecommerce",
+  "version": "1.0.0",
+  "description": "this is server for e-commerce page",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nguyenb1809158/server_ecommerce.git"
+  },
+  "keywords": [
+    "aries",
+    "shop",
+    "server",
+    "nodejs",
+    "server"
+  ],
+  "author": "Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nguyenb1809158/server_ecommerce/issues"
+  },
+  "homepage": "https://github.com/Nguyenb1809158/server_ecommerce#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.2",
+    "express-session": "^1.17.3",
+    "mongoose": "^7.6.3",
+    "nodemailer": "^6.9.7"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^3.0.1"
+  }
+}

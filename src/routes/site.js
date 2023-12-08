@@ -1,0 +1,18 @@
+const express = require('express')
+const router = express.Router()
+const siteController = require('../controllers/SiteController')
+
+router.get('/api/search',siteController.api_search)
+router.get('/api/',siteController.api_index)
+router.get('/api/hat',siteController.api_hat)
+router.get('/api/t-shirt',siteController.api_tshirt)
+router.get('/api/wallet',siteController.api_wallet)
+router.get('/api/balo',siteController.api_balo)
+router.get('/api/glass',siteController.api_glass)
+router.post('/api/action/regist',siteController.api_action_regist)
+router.post('/api/action/login',siteController.api_action_login)
+router.get('/api/logout',siteController.api_logout)
+router.get('/api/number_cart',siteController.api_cart_number)
+router.get('/api/number_heart',siteController.api_heart_number)
+router.get('/api/get_promotions',siteController.api_get_promotions)
+module.exports = router
